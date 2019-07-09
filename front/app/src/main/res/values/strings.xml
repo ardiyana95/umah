@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Umah</string>
+    <string name="title_activity_home">Home</string>
+    <string name="search_hint"><i>Search Location, Price or Facility</i></string>
+    <string name="title_activity_person">Person</string>
+    <string name="title_search">Advance Search</string>
+    <string name="title_kriteria">Sort Kriteria</string>
+    <string name="title_output">Result</string>
+    <string name="title_activity_hasil">Hasil</string>
+    <string name="tab_text_1">Summary</string>
+    <string name="tab_text_2">Individual</string>
+    <string name="title_activity_tabbed">Result</string>
+    <string name="title_detail_page">Detail</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_list_topsis">ListTopsis</string>
+
+</resources>

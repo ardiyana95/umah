@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:id="@+id/on_img"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:src="@drawable/on_1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"/>
+
+    <TextView
+        android:id="@+id/on_title"
+        android:layout_below="@id/on_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search by Group"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textSize="17dp"
+        android:textColor="@color/colorWhite"/>
+
+    <TextView
+        android:id="@+id/on_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/on_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:layout_margin="13dp"
+        android:textColor="@color/colorWhite"
+        android:text="umah application provides mainstay features with group based search"/>
+
+</RelativeLayout>

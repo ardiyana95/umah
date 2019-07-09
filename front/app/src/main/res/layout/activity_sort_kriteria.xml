@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".search.SortKriteria">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/topbar_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_filter"
+            android:minHeight="?attr/actionBarSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:titleTextColor="@color/colorWhite"
+            app:subtitleTextColor="@color/colorWhite"
+            android:background="@color/colorPrimary"
+            android:elevation="4dp">
+
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topbar_filter"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#e7ebed"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/title_ehading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tingkat Prioritas"/>
+
+                <TextView
+                    android:layout_below="@id/title_ehading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1 (Rendah) - 10 (Tinggi)"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="30dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Orang ke "/>
+                <TextView
+                    android:id="@+id/currentUserSort"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sort_lokasi"
+                app:ms_floatingLabelText="Lokasi"
+                app:ms_hint="Lokasi"
+                app:ms_multiline="true" />
+
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sort_lingkungan"
+                app:ms_hint="Lingkungan"
+                app:ms_floatingLabelText="Lingkungan"
+                app:ms_multiline="true" />
+
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sort_transportasi"
+                app:ms_hint="Akses Transportasi Publik"
+                app:ms_floatingLabelText="Akses Transportasi Publik"
+                app:ms_multiline="true" />
+
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sort_infras"
+                app:ms_hint="Insfrastruktur dan fasiltas sekitar"
+                app:ms_floatingLabelText="Insfrastruktur dan fasiltas sekitar"
+                app:ms_multiline="true" />
+
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sort_harga"
+                app:ms_hint="Harga"
+                app:ms_floatingLabelText="Harga"
+                app:ms_multiline="true" />
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sort_luasbangungan"
+                app:ms_hint="Luas Bangunan"
+                app:ms_floatingLabelText="Luas Bangunan"
+                app:ms_multiline="true" />
+
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sort_desain"
+                app:ms_hint="Desain dan Konstruksi"
+                app:ms_floatingLabelText="Desain dan Konstruksi"
+                app:ms_multiline="true" />
+
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sort_fasilitas"
+                app:ms_hint="Fasilitas dalam lingungan properti"
+                app:ms_floatingLabelText="Fasilitas dalam lingungan properti"
+                app:ms_multiline="true" />
+
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sort_rencana"
+                app:ms_hint="Rencana Pengembangan Area"
+                app:ms_floatingLabelText="Rencana Pengembagan Area"
+                app:ms_multiline="true" />
+
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sort_kesiapan"
+                app:ms_hint="Kesiapan ditempati"
+                app:ms_floatingLabelText="Kesiapan ditempati"
+                android:layout_marginBottom="50dp"
+                app:ms_multiline="true" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btn_save_sort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"
+            android:text="Submit"
+            android:textColor="@color/colorWhite"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

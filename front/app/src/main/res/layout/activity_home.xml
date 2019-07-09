@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home.Home">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary"
+        android:padding="16dp">
+        <EditText
+            android:id="@+id/search_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:background="@drawable/input_bg"
+            android:drawableLeft="@drawable/ic_bx_search_alt"
+            android:drawablePadding="10dp"
+            android:hint="@string/search_hint"
+            android:focusableInTouchMode="false"
+            android:editable="false"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_search"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/searh_wl"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:layout_below="@id/img_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Waiting instruction ..."
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".result.DetailPage"
+    android:background="#fff">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/topbar_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_detail"
+            android:minHeight="?attr/actionBarSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:titleTextColor="@color/colorWhite"
+            app:subtitleTextColor="@color/colorWhite"
+            android:background="@color/colorPrimary"
+            android:elevation="4dp">
+
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topbar_filter"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/form_filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_rumah"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/img_dummy"
+                android:scaleType="centerCrop"/>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:padding="16dp"
+               android:layout_marginBottom="20dp">
+
+               <TextView
+                   android:id="@+id/name_rumah"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:textStyle="bold"
+                   android:textSize="20dp"
+                   android:text="-"/>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal">
+                   <TextView
+                       android:id="@+id/lokasi_rumah"
+                       android:layout_width="wrap_content"
+                       android:layout_height="match_parent"
+                       android:text="-, "/>
+                   <TextView
+                       android:id="@+id/provinsi_rumah"
+                       android:layout_width="wrap_content"
+                       android:layout_height="match_parent"
+                       android:text="-"/>
+               </LinearLayout>
+
+               <TextView
+                   android:id="@+id/harga_rumah"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:text="-"
+                   android:textSize="20dp"
+                   android:textColor="@color/colorAccent"
+                   android:layout_marginTop="10dp"/>
+
+               <TextView
+                   android:id="@+id/alamat_rumah"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:text="-"
+                   android:layout_marginTop="10dp"/>
+               <TextView
+                   android:id="@+id/zipcode_rumah"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:text="-"/>
+
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:layout_marginTop="20dp"
+                   android:layout_marginBottom="20dp"
+                   android:background="#eeeeee"></RelativeLayout>
+
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:textSize="12dp"
+                   android:textAllCaps="true"
+                   android:text="Lingkungan"/>
+
+               <TextView
+                   android:id="@+id/ligkungan_rumah"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:textStyle="bold"
+                   android:text="-"/>
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:layout_marginTop="20dp"
+                   android:layout_marginBottom="20dp"
+                   android:background="#eeeeee"></RelativeLayout>
+
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:textSize="12dp"
+                   android:textAllCaps="true"
+                   android:text="Akses Transportasi Publik"/>
+
+               <TextView
+                   android:id="@+id/transportasi_rumah"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:textStyle="bold"
+                   android:text="-"/>
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:layout_marginTop="20dp"
+                   android:layout_marginBottom="20dp"
+                   android:background="#eeeeee"></RelativeLayout>
+
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:textSize="12dp"
+                   android:textAllCaps="true"
+                   android:text="Infrastruktur dan Fasilitas Sekitar"/>
+
+               <TextView
+                   android:id="@+id/infrastruktur_rumah"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:textStyle="bold"
+                   android:text="-"/>
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:layout_marginTop="20dp"
+                   android:layout_marginBottom="20dp"
+                   android:background="#eeeeee"></RelativeLayout>
+
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:textSize="12dp"
+                   android:textAllCaps="true"
+                   android:text="Tipe Rumah"/>
+
+               <TextView
+                   android:id="@+id/tipe_rumah_detail"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:textStyle="bold"
+                   android:text="-"/>
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:layout_marginTop="20dp"
+                   android:layout_marginBottom="20dp"
+                   android:background="#eeeeee"></RelativeLayout>
+
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:textSize="12dp"
+                   android:textAllCaps="true"
+                   android:text="Desain dan Konstruksi"/>
+
+               <TextView
+                   android:id="@+id/desain_rumah"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:textStyle="bold"
+                   android:text="-"/>
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:layout_marginTop="20dp"
+                   android:layout_marginBottom="20dp"
+                   android:background="#eeeeee"></RelativeLayout>
+
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:textSize="12dp"
+                   android:textAllCaps="true"
+                   android:text="Fasilitas dalam Lingkungan Properti"/>
+
+               <TextView
+                   android:id="@+id/fasilitas_rumah"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:textStyle="bold"
+                   android:text="-"/>
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:layout_marginTop="20dp"
+                   android:layout_marginBottom="20dp"
+                   android:background="#eeeeee"></RelativeLayout>
+
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:textSize="12dp"
+                   android:textAllCaps="true"
+                   android:text="Rencana Pengembangan Area"/>
+
+               <TextView
+                   android:id="@+id/rencana_rumah"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:textStyle="bold"
+                   android:text="-"/>
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:layout_marginTop="20dp"
+                   android:layout_marginBottom="20dp"
+                   android:background="#eeeeee"></RelativeLayout>
+
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:textSize="12dp"
+                   android:textAllCaps="true"
+                   android:text="Kesiapan untuk ditempati"/>
+
+               <TextView
+                   android:id="@+id/kesiapan_rumah"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:textStyle="bold"
+                   android:text="-"/>
+
+
+           </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>
